@@ -1,9 +1,8 @@
 'use client'
-import Image from 'next/image'
-import { useEffect, useState } from 'react'
 import { Compass, BriefcaseBusiness, Pen, IceCreamBowl, User, Layers2, Triangle, Github, Linkedin, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import { useEffect, useState } from 'react';
 
 const MAIN_DATA = [
     {
@@ -75,7 +74,7 @@ const CONTACT_DATA = [
     }
 ]
 
-export default function Sidebar() {
+export default function Navigation() {
     const pathname = usePathname();
     const [links, setLinks] = useState(MAIN_DATA);
     const [contactLinks, setContactLinks] = useState(CONTACT_DATA);
@@ -96,35 +95,24 @@ export default function Sidebar() {
     }, [pathname]);
 
     return (
-        <div className='h-screen bg-primary text-secondary lg:block hidden'>
-            <div className='flex flex-col px-[16px]'>
+        <div className='fixed bottom-0 left-0 right-0 z-50 bg-primary shadow-md lg:hidden'>
 
-                {/* Logo and Name */}
-                <div className='flex py-[24px] gap-[0.75rem]'>
-                    <Image src='/logo.jpeg' className='rounded-[50%]' alt='logo' width={40} height={40} />
-                    <div>
-                        <h1 className='text-white text-[16px] font-bold'>Lasha Bidzinashvili</h1>
-                        <p className='text-[12px]'>Full-Stack Developer</p>
-                    </div>
-                </div>
+            <div className='flex items-center py-[16px] justify-start md:justify-center overflow-x-scroll'>
 
-                {/* Main */}
-                <div className='flex flex-col'>
+                <div className='flex items-center justify-center'>
                     {links.map((link) => (
-                        <Link href={link.url} key={link.name} className={`flex items-center gap-[10px] rounded-[10px] py-[10px] px-[10px] hover:text-white transition-all ease-in-out duration-300 border-[1px] border-solid ${link.active ? 'bg-secondary-dark border-accent text-white' : 'border-primary'}`}>
-                            <link.icon size={18} />
-                            <p className='text-[14px]'>{link.name}</p>
+                        <Link href={link.url} key={link.name} className={`flex flex-col items-center gap-[5px] rounded-[10px] py-[8px] px-[16px] hover:text-white transition-all ease-in-out duration-300 ${link.active ? 'bg-secondary-dark text-white' : ''}`}>
+                            <link.icon color='#858585' size={18} />
+                            <p className={`text-[14px] text-secondary ${link.active && 'text-white'}`}>{link.name}</p>
                         </Link>
                     ))}
                 </div>
 
-                {/* Contact */}
-                <div className='flex flex-col mt-[20px]'>
-                    <h2 className='text-secondary px-[10px] py-[12px] text-[14px] font-[600]'>Contact</h2>
+                <div className='items-center justify-center flex'>
                     {contactLinks.map((link) => (
-                        <Link href={link.url} key={link.name} target={link.target} className={`flex items-center gap-[10px] rounded-[10px] py-[10px] px-[10px] hover:text-white transition-all ease-in-out duration-300 border-[1px] border-solid ${link.active ? 'bg-secondary-dark border-accent text-white' : 'border-primary'}`}>
-                            <link.icon size={18} />
-                            <p className='text-[14px]'>{link.name}</p>
+                        <Link href={link.url} key={link.name} target={link.target} className={`flex flex-col items-center gap-[5px] rounded-[10px] py-[8px] px-[16px] hover:text-white transition-all ease-in-out duration-300 ${link.active ? 'bg-secondary-dark text-white' : ''}`}>
+                            <link.icon color='#858585' size={18} />
+                            <p className={`text-[14px] text-secondary ${link.active && 'text-white'}`}>{link.name}</p>
                         </Link>
                     ))}
                 </div>
