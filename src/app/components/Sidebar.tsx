@@ -96,7 +96,7 @@ export default function Sidebar() {
     }, [pathname]);
 
     return (
-        <div className='h-screen bg-primary text-secondary lg:block hidden'>
+        <div className='min-h-screen bg-primary text-secondary lg:block hidden'>
             <div className='flex flex-col px-[16px]'>
 
                 {/* Logo and Name */}
