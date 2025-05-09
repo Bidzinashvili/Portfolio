@@ -40,13 +40,6 @@ const MAIN_DATA = [
 
 const CONTACT_DATA = [
     {
-        name: 'Contact',
-        icon: Triangle,
-        url: '/contact',
-        active: false,
-        target: ''
-    },
-    {
         name: 'Github',
         icon: Github,
         url: 'https://github.com/Bidzinashvili',
