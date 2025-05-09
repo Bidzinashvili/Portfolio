@@ -1,7 +1,7 @@
 'use client'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
-import { Compass, BriefcaseBusiness, Pen, IceCreamBowl, User, Layers2, Triangle, Github, Linkedin, Instagram } from 'lucide-react';
+import { Compass, BriefcaseBusiness, Pen, User, Layers2, Github, Linkedin, Instagram } from 'lucide-react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 

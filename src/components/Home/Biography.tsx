@@ -6,7 +6,7 @@ export default function Biography() {
 
     const [emailButtonText, setEmailButtonText] = useState("Email");
 
-    const handleEmailCopy = (event: React.MouseEvent<HTMLButtonElement>) => {
+    const handleEmailCopy = () => {
         navigator.clipboard.writeText("lashabidzinashvili07@gmail.com")
             .then(() => {
                 setEmailButtonText("Copied!");
@@ -22,11 +22,11 @@ export default function Biography() {
     return (
         <div className="px-[1rem] max-w-[900px] mx-auto mt-[100px] flex flex-col">
             <h1 className="text-light text-[50px] font-semibold">
-                Hey, I'm Lasha, <br />
+                Hey, I&apos;m Lasha, <br />
                 <span className="text-secondary">A Full-Stack Developer</span>
             </h1>
             <p className="text-secondary max-w-[600px] mt-[20px]">
-                I’m a developer who enjoys building web applications, exploring new technologies, playing guitar, and spending time outdoors.
+                I&apos;m a developer who enjoys building web applications, exploring new technologies, playing guitar, and spending time outdoors.
             </p>
             <div>
                 <div className="flex items-center gap-[10px] mt-[20px]">

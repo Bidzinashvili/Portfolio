@@ -4,7 +4,7 @@ export default function page() {
     return (
         <div className='flex-1 h-screen overflow-scroll px-[1rem] pb-[100px] lg:pb-[50px] max-w-[900px] mx-auto'>
             <h1 className='mt-[80px] text-white text-5xl font-bold'>Experience</h1>
-            <p className='text-secondary mt-[10px]'>A summary of my professional work history, technologies I've used, and key achievements.</p>
+            <p className='text-secondary mt-[10px]'>A summary of my professional work history, technologies I&apos;ve used, and key achievements.</p>
 
             <div className='mt-[30px]'>
                 <h2 className='text-white font-bold text-[18px]'>Dealin</h2>

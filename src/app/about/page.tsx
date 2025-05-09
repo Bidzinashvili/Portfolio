@@ -10,16 +10,18 @@ export default function AboutMe() {
                     <p className="text-sm text-gray-400 mb-2">📍 Based in Georgia</p>
                     <h1 className="text-5xl font-bold text-white">About Me</h1>
                     <p className="text-secondary mt-4">
-                        Hi, I'm Lasha, a software engineer based in Georgia. I specialize in creating functional, responsive websites and web applications, always staying up-to-date with new technologies to provide high-quality solutions. My goal is to deliver seamless user experiences and help businesses grow online.
+                        Hi, I&apos;m Lasha, a software engineer based in Georgia. I specialize in creating functional, responsive websites and web applications, always staying up-to-date with new technologies to provide high-quality solutions. My goal is to deliver seamless user experiences and help businesses grow online.
                     </p>
+
 
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-8">
                         {/* Background */}
                         <div className="bg-[#1f1f1f] p-4 rounded-2xl border border-neutral-800">
                             <h3 className="text-white font-semibold text-lg mb-2">📖 Background</h3>
                             <p className="text-secondary text-sm">
-                                I've been involved in web development since 2020, focusing on full-stack development. I am currently pursuing a B.A.A degree.
+                                I&apos;ve been involved in web development since 2020, focusing on full-stack development. I am currently pursuing a B.A.A degree.
                             </p>
+
                         </div>
 
                         {/* Skills */}
