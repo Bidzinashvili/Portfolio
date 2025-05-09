@@ -7,6 +7,25 @@ export default function page() {
             <p className='text-secondary mt-[10px]'>A summary of my professional work history, technologies I've used, and key achievements.</p>
 
             <div className='mt-[30px]'>
+                <h2 className='text-white font-bold text-[18px]'>Dealin</h2>
+                <p className='text-secondary mt-[8px]'>Front-End Engineer, December 2024 – Present</p>
+                <p className='text-secondary mt-[8px]'>As a Front-End Engineer at Dealin, I play an active role in shaping the user interface and experience of key web products. My day-to-day responsibilities include:</p>
+
+                <ul className="list-disc pl-6 mt-[8px] gap-[8px] flex flex-col">
+                    <li className='text-secondary'>
+                        <span className='font-bold'>UI Development:</span> Crafting responsive and performant user interfaces using <span className='text-white'>React.js</span> and modern styling techniques.
+                    </li>
+                    <li className='text-secondary'>
+                        <span className='font-bold'>Team Collaboration:</span> Partnering with designers, product managers, and backend engineers to deliver cohesive, end-to-end features.
+                    </li>
+                    <li className='text-secondary'>
+                        <span className='font-bold'>Code Quality:</span> Writing clean, maintainable code and participating in code reviews to ensure engineering standards are met.
+                    </li>
+                </ul>
+            </div>
+
+
+            <div className='mt-[30px]'>
                 <h2 className='text-white font-bold text-[18px]'>Sprenty</h2>
                 <p className='text-secondary mt-[8px]'>Front-end Engineer, Jul 2022 - Dec 2022 </p>
                 <p className='text-secondary mt-[8px]'>Working as a Front-End Engineer, contributing to the development and maintenance of web applications. Key responsibilities include:</p>

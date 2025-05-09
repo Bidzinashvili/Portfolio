@@ -25,12 +25,6 @@ const MAIN_DATA = [
         url: '/projects'
     },
     {
-        name: 'Services',
-        icon: IceCreamBowl,
-        active: false,
-        url: '/services'
-    },
-    {
         name: 'About',
         icon: User,
         active: false,
